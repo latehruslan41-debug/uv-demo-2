@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import numpy
+import numpy as np
 
 st.set_page_config(page_title="Random Data Explorer", layout="centered")
 
@@ -10,7 +10,7 @@ st.title("📊Random Data Explorer")
 st.sidebar.header("settings")
 points = st.sidebar.slider("Number of data points", 10, 500, 100)
 seed = st.sidebar.number_input("Random seed", value=42)
-generate = st.sidebar.button("generate Data")
+generate = st.sidebar.button("Generate Data")
 
 # Generate Data
 if generate:
